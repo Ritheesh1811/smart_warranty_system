@@ -1,3 +1,7 @@
+// SmartWarranty — AI-powered warranty & repair agent with persistent product memory.
+// This root component handles top-level navigation between Dashboard, Products,
+// Product Detail, and Notifications views, plus the product registration modal.
+// Data is loaded from Supabase on mount and refreshed after mutations.
 import { useState, useEffect, useCallback } from 'react';
 import { Shield, LayoutDashboard, Package, Bell, Brain, Plus, X } from 'lucide-react';
 import type { Product, Notification } from './lib/types';
